@@ -72,9 +72,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("一定要國外實習嗎")
+            resultDICT['實習'].append("一定要國外實習嗎")
 
     if utterance == "一定要去實習嗎":
         if CHATBOT_MODE:
@@ -82,9 +80,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("一定要實習嗎")
+            resultDICT['實習'].append("一定要實習嗎")
 
     if utterance == "了解有關國內的實習":
         if CHATBOT_MODE:
@@ -92,9 +88,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "了解有關國外的實習":
         if CHATBOT_MODE:
@@ -102,9 +96,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "了解關於國內的實習":
         if CHATBOT_MODE:
@@ -112,9 +104,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "了解關於國外的實習":
         if CHATBOT_MODE:
@@ -122,9 +112,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "只想在國內實習":
         if CHATBOT_MODE:
@@ -132,9 +120,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("只想在國內實習")
+            resultDICT['實習'].append("只想在國內實習")
 
     if utterance == "可以去國外實習嗎":
         if CHATBOT_MODE:
@@ -142,9 +128,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("可以去海外實習")
+            resultDICT['實習'].append("可以去海外實習")
 
     if utterance == "國內的實習":
         if CHATBOT_MODE:
@@ -152,9 +136,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "實習":
         if CHATBOT_MODE:
@@ -162,9 +144,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("實習")
+            resultDICT['實習'].append("實習")
 
     if utterance == "我對國內實習感興趣":
         if CHATBOT_MODE:
@@ -172,9 +152,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "我對國外實習有興趣":
         if CHATBOT_MODE:
@@ -182,9 +160,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "提供一些和國外的實習有關的詳細資訊":
         if CHATBOT_MODE:
@@ -192,9 +168,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "提供一些有關國內的實習的詳細資訊":
         if CHATBOT_MODE:
@@ -202,9 +176,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "提供一些有關國外的實習的詳細資訊":
         if CHATBOT_MODE:
@@ -212,9 +184,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "提供一些跟國內的實習有關的詳細資訊":
         if CHATBOT_MODE:
@@ -222,9 +192,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "提供一些跟國內的實習相關的詳細資訊":
         if CHATBOT_MODE:
@@ -232,9 +200,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "提供一些跟國外的實習相關的詳細資訊":
         if CHATBOT_MODE:
@@ -242,9 +208,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "提供一些關於國內的實習的詳細資訊":
         if CHATBOT_MODE:
@@ -252,9 +216,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("國內實習")
+            resultDICT['實習'].append("國內實習")
 
     if utterance == "提供一些關於國外的實習的詳細資訊":
         if CHATBOT_MODE:
@@ -262,9 +224,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     if utterance == "海外的實習":
         if CHATBOT_MODE:
@@ -272,8 +232,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['實習'].append("海外實習")
+            resultDICT['實習'].append("海外實習")
 
     return resultDICT

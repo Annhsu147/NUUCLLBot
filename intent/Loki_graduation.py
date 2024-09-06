@@ -72,9 +72,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     if utterance == "修完幾個學分才可以畢業":
         if CHATBOT_MODE:
@@ -82,9 +80,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     if utterance == "修完幾個學分才能夠畢業":
         if CHATBOT_MODE:
@@ -92,9 +88,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     if utterance == "如何才可以畢業":
         if CHATBOT_MODE:
@@ -102,9 +96,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("畢業要求")
+            resultDICT['畢業'].append("畢業要求")
 
     if utterance == "怎麼才能夠畢業":
         if CHATBOT_MODE:
@@ -112,9 +104,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("畢業要求")
+            resultDICT['畢業'].append("畢業要求")
 
     if utterance == "想要畢業":
         if CHATBOT_MODE:
@@ -122,9 +112,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("想要畢業")
+            resultDICT['畢業'].append("想要畢業")
 
     if utterance == "有多少個學分就能畢業":
         if CHATBOT_MODE:
@@ -132,9 +120,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     if utterance == "有幾個學分才能夠畢業":
         if CHATBOT_MODE:
@@ -142,9 +128,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     if utterance == "畢業所需的要求":
         if CHATBOT_MODE:
@@ -152,9 +136,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("畢業要求")
+            resultDICT['畢業'].append("畢業要求")
 
     if utterance == "畢業有哪些條件":
         if CHATBOT_MODE:
@@ -162,9 +144,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("畢業要求")
+            resultDICT['畢業'].append("畢業要求")
 
     if utterance == "畢業的條件":
         if CHATBOT_MODE:
@@ -172,9 +152,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            pattern = r"\b畢業的?(條件|門檻|規定|標準|要求|方法|方式)\b"
-            if re.search(pattern, posSTR):
-                resultDICT['畢業'].append("畢業要求")
+            resultDICT['畢業'].append("畢業要求")
 
     if utterance == "要多少個學分才可以畢業":
         if CHATBOT_MODE:
@@ -182,8 +160,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['畢業'].append("學分")
+            resultDICT['畢業'].append("學分")
 
     return resultDICT

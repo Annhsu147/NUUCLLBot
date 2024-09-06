@@ -72,9 +72,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['介紹'].append("華文")
+            resultDICT['介紹'].append("華文")
 
     if utterance == "介紹你們華文系":
         if CHATBOT_MODE:
@@ -82,9 +80,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['介紹'].append("華文系")
+            resultDICT['介紹'].append("華文系")
 
     if utterance == "華文系的介紹":
         if CHATBOT_MODE:
@@ -92,9 +88,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['介紹'].append("華文系")
+            resultDICT['介紹'].append("華文系")
 
     if utterance == "華語文學是什麼":
         if CHATBOT_MODE:
@@ -102,8 +96,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT, pattern=""):
             if resultDICT["response"]:
                 resultDICT["source"] = "reply"
         else:
-            match = re.search(pattern, posSTR)
-            if match:
-                resultDICT['介紹'].append("華文")
+            resultDICT['介紹'].append("華文")
 
     return resultDICT
